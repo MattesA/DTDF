@@ -149,4 +149,4 @@ server <- function(input, output) {
 shinyApp(ui = ui, server = server)
 
 # Remove the custom function after the app is closed
-rm(plot.models)
+#rm(plot.models)
