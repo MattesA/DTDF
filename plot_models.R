@@ -1,5 +1,12 @@
 
 
+# Check if necessary packages are installed and install missing packages
+ins <- rownames(installed.packages())  # installed packages
+rqd <- c("magick", "ggplot2")  # required packages
+pkg <- rqd[!rqd %in% ins]  # packages that need to be installed
+if (length(pkg) > 0) install.packages(pkg)  # install them
+
+
 library(magick)
 library(ggplot2)
 
